@@ -1,0 +1,70 @@
+.title-home {
+    background-color: rgb(168, 181, 206);
+    padding: 80px;
+}
+
+.input-account {
+    width: 40%;
+    margin-right: 10px;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.input-block {
+    margin-right: 10px;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.title-home button {
+    border-radius: 5px;
+    border: 2px solid rgb(108, 108, 223);
+    background-color: rgb(108, 108, 223);
+    color: white;
+    padding: 5px;
+}
+
+.title-home button:hover {
+    cursor: pointer;
+    background-color: rgb(157, 157, 235);
+}
+
+.content-container {
+    padding: 80px;
+}
+
+.your-account {
+    color: #565353;
+}
+
+.blocks-container {
+    border: 1px solid gray;
+    border-radius: 10px;
+    width: 60%;
+    background-color: #fff;
+}
+
+.title-blocks-container {
+    padding-left: 20px;
+    color: #565353;
+    font-weight: bolder;
+}
+
+.block-container {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    border-top: 1px solid gray;
+    padding-left: 20px;
+}
+
+.btn-transactions {
+    border: none;
+    background: #fff;
+    color: rgb(108, 108, 223);
+}
+
+.btn-transactions:hover {
+    cursor: pointer;
+    color:rgb(76, 76, 168)
+}

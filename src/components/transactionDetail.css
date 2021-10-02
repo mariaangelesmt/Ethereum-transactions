@@ -1,0 +1,19 @@
+.container {
+    margin: 80px;
+}
+
+.transaction-detail-container {
+    
+    display: flex;
+    flex-direction: column;
+}
+
+.detail-container {
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+}
+
+.detail-container p {
+    width: 200px;
+}

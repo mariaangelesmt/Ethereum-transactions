@@ -1,0 +1,35 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.transactions-container {
+    margin: 80px;
+}
+
+.title {
+    color: #565353;
+}
+
+.title-transactions-container {
+    display: flex;
+    flex-direction: row;
+    font-weight: bold;
+}
+
+.title-transactions-container p {
+    flex: 25%;
+}
+
+.transaction-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.transaction-details {
+    display: flex;
+    flex-direction: row;
+}
+
+.transaction-details p {
+    flex: 25%;
+}

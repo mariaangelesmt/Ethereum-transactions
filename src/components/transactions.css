@@ -3,11 +3,18 @@
 }
 
 .transactions-container {
-    margin: 80px;
+    padding: 80px;
 }
 
 .title {
     color: #565353;
+}
+
+.table-transactions {
+    border: 1px solid gray;
+    border-radius: 10px;
+    background: #fff;
+    width: fit-content;
 }
 
 .title-transactions-container {
@@ -17,7 +24,15 @@
 }
 
 .title-transactions-container p {
-    flex: 25%;
+    padding: 0 40px;
+}
+
+.title-1 {
+    width: 80%;
+}
+
+.title-2 {
+    width: 10%;
 }
 
 .transaction-container {
@@ -28,8 +43,29 @@
 .transaction-details {
     display: flex;
     flex-direction: row;
+    border-top: 1px solid gray;
 }
 
-.transaction-details p {
-    flex: 25%;
+.transaction-details button, .transaction-details p {
+    padding: 0 40px;
+}
+
+.transaction-details button {
+    width: 80%;
+}
+
+.btn-transaction {
+    border: none;
+    color: rgb(108, 108, 223);
+    background-color: #fff;
+    text-align: left;
+    padding: 0 40px;
+    flex: 50%;
+}
+
+
+
+a {
+    color: gray;
+    text-decoration: none;
 }

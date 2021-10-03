@@ -1,6 +1,12 @@
 .title-home {
-    background-color: rgb(168, 181, 206);
+    /* background-color: rgb(168, 181, 206); */
     padding: 80px;
+    background-image: url('../assets/images/homee.jpeg');
+    
+}
+
+.title-home h1 {
+    color: #fff;
 }
 
 .input-account {
@@ -42,6 +48,7 @@
     border-radius: 10px;
     width: 60%;
     background-color: #fff;
+    box-shadow: 0 6px 20px rgba(56, 125, 255, 0.17);
 }
 
 .title-blocks-container {

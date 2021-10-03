@@ -16,24 +16,27 @@ const Transactions = (props) => {
                 <h2>Transactions</h2>
                 <p>A total of {transactions.length} transactions found</p>
             </div>
-            <div className="title-transactions-container">
-                <p>Txn Hash</p>
-                <p>Block</p>
+            <div className="table-transactions">
+                <div className="title-transactions-container">
+                    <p className="title-1">Txn Hash</p>
+                    <p className="title-2">Block</p>
+                </div>
+ 
+                    {
+                        transactions.map(transaction => {
+                            return (
+                                <div className="transaction-details">
+                                    <button className="btn-transaction" onClick={ () => showTransactionsFromBlock(transaction) }>
+                                        {transaction.hash}
+                                    </button>    
+                                    <p>{transaction.blockNumber}</p>
+                                </div>
+                            )
+                        })
+                    }
+
             </div>
-            <div className="transaction-container">
-                {
-                    transactions.map(transaction => {
-                        return (
-                            <div className="transaction-details">
-                                <button className="btn-transaction" onClick={ () => showTransactionsFromBlock(transaction) }>
-                                    {transaction.hash}
-                                </button>    
-                                <p>{transaction.blockNumber}</p>
-                            </div>
-                        )
-                    })
-                }
-            </div>   
+            
         </div>
     )
 }

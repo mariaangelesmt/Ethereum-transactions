@@ -67,9 +67,9 @@ function Home(props) {
     <div className="container-home">
         <div className="title-home">
             <h1>The Ethereum Transactions</h1>
-            <input className="input-account" type="text" placeholder="enter your account" name="account" value={state.account} onChange={handleChange} />
-            <input className="input-block" type="text" placeholder="enter start block" name="startBlock" value={state.startBlock} onChange={handleChange} />
-            <input className="input-block" type="text" placeholder="enter end block" name="endBlock" value={state.endBlock} onChange={handleChange} />
+            <input className="input-account" type="text" placeholder="Enter your account" name="account" value={state.account} onChange={handleChange} />
+            <input className="input-block" type="text" placeholder="Enter start block" name="startBlock" value={state.startBlock} onChange={handleChange} />
+            <input className="input-block" type="text" placeholder="Enter end block" name="endBlock" value={state.endBlock} onChange={handleChange} />
             <button onClick={handleSubmit}>Search</button>
         </div>
         <div className="content-container">

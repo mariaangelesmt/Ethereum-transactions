@@ -31,33 +31,33 @@ const TransactionDetail = (props) => {
             <h2>Transaction details</h2>
             <div className="transaction-detail-container">
                 <div className="detail-container">
-                    <p>Transaction Hash:</p>
+                    <p className="detail-container-title">Transaction Hash:</p>
                     <p>{transaction.hash}</p>
                 </div>
                 <div className="detail-container">
-                    <p>Status:</p>
+                    <p className="detail-container-title">Status:</p>
                         {
-                            state.status ?  <p>Success</p> : <p>Fail</p>
+                            state.status ?  <p className="success">Success</p> : <p className="fail">Fail</p>
                         }
                 </div>
                 <div className="detail-container">
-                    <p>Block:</p>
+                    <p className="detail-container-title">Block:</p>
                     <p>{transaction.blockNumber}</p>
                 </div>
                 <div className="detail-container">
-                    <p>From:</p>
+                    <p className="detail-container-title">From:</p>
                     <p>{transaction.from}</p>
                 </div>
                 <div className="detail-container">
-                    <p>Interacted With (To):</p>
+                    <p className="detail-container-title">Interacted With (To):</p>
                     <p>{transaction.to}</p> 
                 </div>
                 <div className="detail-container">
-                    <p>Gas Price:</p>
+                    <p className="detail-container-title">Gas Price:</p>
                     <p>{transaction.gasPrice}</p>
                 </div>
                 <div className="detail-container">
-                    <p>Tnx Type:</p>
+                    <p className="detail-container-title">Tnx Type:</p>
                     <p>{transaction.type}</p>
                 </div>
             </div>

@@ -6,7 +6,6 @@ import Web3 from 'web3';
 const TransactionDetail = (props) => {
 
     const {transaction} = props.location.state;
-    // console.log(transaction);
 
     const initialState = {}
 
@@ -18,7 +17,6 @@ const TransactionDetail = (props) => {
         const receipt = await web3.eth.getTransactionReceipt(hash);
         setState(receipt);
     }
-    // console.log({state});
 
     useEffect(() => {
         getTransactionReceipt(transaction.hash);
